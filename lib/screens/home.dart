@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: "Height",
+                        hintText: "Height(CM)",
                         hintStyle: TextStyle(
                             fontSize: 42,
                             fontWeight: FontWeight.w300,
@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: "Weight",
+                        hintText: "Weight(KG)",
                         hintStyle: TextStyle(
                             fontSize: 42,
                             fontWeight: FontWeight.w300,
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               GestureDetector(
                 onTap: () {
-                  double _h = double.parse(_heightController.text);
+                  double _h = double.parse(_heightController.text)/100;
                   double _w = double.parse(_weightController.text);
                   setState(() {
                     _bmiResult = _w / (_h * _h);
