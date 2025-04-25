@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         border: InputBorder.none,
                         hintText: "Height(CM)",
                         hintStyle: TextStyle(
-                            fontSize: 42,
+                            fontSize: 24,
                             fontWeight: FontWeight.w300,
                             // ignore: deprecated_member_use
                             color: Colors.white.withOpacity(.8)),
@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         border: InputBorder.none,
                         hintText: "Weight(KG)",
                         hintStyle: TextStyle(
-                            fontSize: 42,
+                            fontSize: 24,
                             fontWeight: FontWeight.w300,
                             // ignore: deprecated_member_use
                             color: Colors.white.withOpacity(.8)),
